@@ -61,10 +61,22 @@ class OnboardingPage extends StatelessWidget {
             const SizedBox(
               height: 30.0,
             ),
-            Text(
-              'Already have account? Log In',
-              style: AppTextStyles.smallText.copyWith(color: AppColors.grey),
-            ),
+
+            RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                text: 'Already have account?',
+                style: AppTextStyles.smallText.copyWith(
+                  color: AppColors.grey,
+                ),
+              ),
+              TextSpan(
+                text: '  Log In',
+                style: AppTextStyles.smallText.copyWith(
+                  color: AppColors.greenlightTwo,
+                ),
+              )
+            ])),
             const SizedBox(height: 60.0),
           ],
         ),
